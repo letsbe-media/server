@@ -1,6 +1,12 @@
 runtime: go
 api_version: go1
-
+skip_files:
+  - ^hugo-src/.*$
+  - ^(.*/)?#.*#$
+  - ^(.*/)?.*~$
+  - ^(.*/)?.*\.py[co]$
+  - ^(.*/)?.*/RCS/.*$
+  - ^(.*/)?\..*$
 handlers:
   - url: /backend/.*
     script: _go_app
@@ -19,5 +25,5 @@ handlers:
     static_dir: www/fonts
   - url: /js
     static_dir: www/js
-  - url: /img
-    static_dir: www/img
+  - url: /images
+    static_dir: www/images
