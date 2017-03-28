@@ -2,5 +2,22 @@ runtime: go
 api_version: go1
 
 handlers:
-- url: /.*
-  script: _go_app
+  - url: /backend/.*
+    script: _go_app
+  - url: /
+    upload: www/index.html
+    static_files: www/index.html
+  - url: /([a-zA-Z-]*)$
+    static_files: www/\1/index.html
+    upload: .*\.html$
+  - url: /(.*)/$
+    static_files: www/\1/index.html
+    upload: .*\.html$
+  - url: /css
+    static_dir: www/css
+  - url: /fonts
+    static_dir: www/fonts
+  - url: /js
+    static_dir: www/js
+  - url: /img
+    static_dir: www/img
