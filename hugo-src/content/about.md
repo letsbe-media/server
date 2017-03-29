@@ -9,7 +9,7 @@ showPagination: false
 
 ## 멤버 소개
 
-* [wraithkim](https://www.youtube.com/channel/UCqJDz2pbPY-tvO1I5Ks5jxA)
+* [wraithkim](https://www.youtube.com/channel/UCQjMu8zCnXjQs4S7Ljpz2Bg)
 	* 3대 스트리머 중 제 1 대장
 * [skywave](https://youtube.com/skywavetm)
 	* 3대 스트리머 중 제 2 대장
